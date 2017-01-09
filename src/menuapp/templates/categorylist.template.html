@@ -1,0 +1,10 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<ul>
+    <li ng-repeat="category in $ctrl.categories" ui-sref="items({categoryId:category.short_name})">
+        {{category.name}}
+    </li>
+</ul>
+<!-- ui-sref="mainList.itemDetail({itemId:$index})"-->
